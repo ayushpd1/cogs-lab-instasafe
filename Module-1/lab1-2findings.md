@@ -7,12 +7,12 @@
 
 ## 1. Nginx Serving HTTP and HTTPS
 Nginx was successfully configured to serve both unencrypted HTTP and encrypted HTTPS traffic. The custom HTML page renders correctly over both protocols.
-* **Evidence:** ![Curl Responses](curl.png)
+* **Evidence:** ![Curl Responses](./images/curl.png)
 
 ## 2. Firewall Configuration
 The firewall (UFW) was configured to allow web traffic, which was verified externally using `nmap` from a local machine showing ports 80 and 443 as successfully open.
-* **UFW Status Evidence:** ![UFW Status](status.png)
-* **Nmap Port Scan Evidence:** ![Nmap Ports](port.png)
+* **UFW Status Evidence:** ![UFW Status](./images/status.png)
+* **Nmap Port Scan Evidence:** ![Nmap Ports](./images/port.png)
 
 ## 3. TLS Certificate Details
 A self-signed X.509 certificate was generated to enable encrypted routing. The extracted cryptographic details via `openssl` are as follows:
@@ -20,7 +20,7 @@ A self-signed X.509 certificate was generated to enable encrypted routing. The e
 * **Issuer:** `C=IN, ST=Karnataka, L=Bangalore, O=InstaSafe Lab, CN=<13.51.200.240>`
 * **Key Algorithm:** `rsaEncryption` (2048 bit)
 * **Expiry Date:** `Not After : May 31 16:10:21 2027 GMT`
-* **Evidence:** ![Certificate Details](certificate.png)
+* **Evidence:** ![Certificate Details](./images/certificate.png)
 
 ## 4. Analysis: Client Validation Behavior
 
