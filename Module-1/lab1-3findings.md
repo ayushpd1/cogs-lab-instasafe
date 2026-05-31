@@ -10,7 +10,7 @@
 
 ## VM1 (Gateway) – `wg show wg0`
 
-![VM1 WireGuard Status](./images/wget1.png)
+![VM1 WireGuard Status](./images/show.png)
 
 The output shows an active WireGuard interface with a recent peer handshake, confirming successful tunnel establishment.
 
@@ -18,7 +18,7 @@ The output shows an active WireGuard interface with a recent peer handshake, con
 
 ## VM2 (Agent) – `wg show`
 
-![VM2 WireGuard Status](./images/wget2.png)
+![VM2 WireGuard Status](./images/show2.png)
 
 The output shows the client successfully connected to the server with an active handshake and traffic exchange.
 
