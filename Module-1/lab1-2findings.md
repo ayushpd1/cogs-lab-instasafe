@@ -1,4 +1,4 @@
-# Lab 1.1 & 1.2 Findings: TLS Setup & Certificate Analysis
+# Lab 1.2 Findings: Certificate Analysis
 **Author:** Ayush Prasad  
 **Target System:** `13.51.200.240` (Ubuntu VM)  
 **Date:** May 31, 2026
