@@ -28,7 +28,7 @@ The output shows the client successfully connected to the server with an active 
 
 To verify connectivity through the encrypted WireGuard tunnel, VM2 (10.0.0.2) pinged VM1 (10.0.0.1).
 
-![Ping Verification](./images/ping.png)
+![Ping Verification](./images/ping2.png)
 
 ### Result
 
