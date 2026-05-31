@@ -10,7 +10,7 @@
 
 ## VM1 (Gateway) – `wg show wg0`
 
-![VM1 WireGuard Status](wg1.png)
+![VM1 WireGuard Status](./images/wget1.png)
 
 The output shows an active WireGuard interface with a recent peer handshake, confirming successful tunnel establishment.
 
@@ -18,7 +18,7 @@ The output shows an active WireGuard interface with a recent peer handshake, con
 
 ## VM2 (Agent) – `wg show`
 
-![VM2 WireGuard Status](wg2.png)
+![VM2 WireGuard Status](./images/wget2.png)
 
 The output shows the client successfully connected to the server with an active handshake and traffic exchange.
 
@@ -28,7 +28,7 @@ The output shows the client successfully connected to the server with an active 
 
 To verify connectivity through the encrypted WireGuard tunnel, VM2 (10.0.0.2) pinged VM1 (10.0.0.1).
 
-![Ping Verification](ping.png)
+![Ping Verification](./images/ping.png)
 
 ### Result
 
@@ -40,7 +40,7 @@ The ping completed successfully with **0% packet loss**, confirming that traffic
 
 A packet capture was performed on the external network interface while traffic traversed the VPN tunnel.
 
-![Encrypted UDP Traffic](tcpdump.png)
+![Encrypted UDP Traffic](./images/tcpdump.png)
 
 ### Result
 
