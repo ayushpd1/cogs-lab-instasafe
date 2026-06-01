@@ -26,7 +26,7 @@ ldapsearch -x -H ldap://localhost -b 'dc=lab,dc=instasafe,dc=local'
 
 ### Evidence
 
-**Screenshot:** `./images/dir.png`
+**Screenshot:** ![LDAP Directory Structure](./images/dir.png)
 
 This screenshot shows that the LDAP server is running and the base directory structure is accessible.
 
@@ -90,7 +90,7 @@ result: 0 Success
 
 ### Evidence
 
-**Screenshot:** `./images/search.png`
+**Screenshot:** ![LDAP Directory Structure](./images/search.png)
 
 The output confirms that both users exist in the directory and their attributes can be retrieved successfully.
 
@@ -136,7 +136,7 @@ This confirms that authentication fails when an incorrect password is supplied.
 
 ### Evidence
 
-**Screenshot:** `./images/whoami.png`
+**Screenshot:** ![LDAP Directory Structure](./images/whoami.png)
 
 The screenshot contains both successful and failed authentication attempts.
 
