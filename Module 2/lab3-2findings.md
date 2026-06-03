@@ -33,7 +33,7 @@ Verified all services were running successfully.
 
 ### Evidence
 
-![Docker Compose Status](./images/docker.png)
+![Docker Compose Status](./images/compose.png)
 
 ---
 
