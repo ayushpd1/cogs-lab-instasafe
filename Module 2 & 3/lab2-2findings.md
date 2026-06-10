@@ -20,6 +20,8 @@ Deploy Keycloak as an Identity Provider (IdP), create users and groups, configur
 ## 1. Keycloak Realm, User and SAML Client
 
 ![Keycloak Admin Console](./images/keycloak_admin_console.png)
+![img2](./images/img2.png)
+
 
 The realm **instasafe-lab** was created successfully.
 
