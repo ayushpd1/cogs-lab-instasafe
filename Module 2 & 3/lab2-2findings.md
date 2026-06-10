@@ -77,8 +77,31 @@ Configuration:
 ---
 
 ## 4. IdP Metadata XML
-
-![IdP Metadata](./images/idp_metadata_xml.png)
+<md:EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="http://44.222.176.144:8080/realms/instasafe-lab">
+<md:IDPSSODescriptor WantAuthnRequestsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+<md:KeyDescriptor use="signing">
+<ds:KeyInfo>
+<ds:KeyName>N3BGbiFwWCkayZNjSkqUWfXtVE9rD-if23KXEXof4q0</ds:KeyName>
+<ds:X509Data>
+<ds:X509Certificate>MIICqTCCAZECBgGesQKeJTANBgkqhkiG9w0BAQsFADAYMRYwFAYDVQQDDA1pbnN0YXNhZmUtbGFiMB4XDTI2MDYxMDEwMDgxOVoXDTM2MDYxMDEwMDk1OVowGDEWMBQGA1UEAwwNaW5zdGFzYWZlLWxhYjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALSjqq9GpjdHvSVqStIAAEMFGkNNgDzp5ySSRtLWRFaPMVBH+ZAmeRpuc0Z/2+sHYK7BLV7DRCMpIWU3a4peX53bjU8UA48diZBFXk+riPlUSrQyXhN1xUNjXx64Xhccar8J8DLHoO/1+BlbWwY3PFXW/pbE783sl0TgGKxBvXWADS5p/NcV8WtpApciMMr2Cgv9MUy7u+SElNupJDHqL86J1hmspB7vKm6HbGOYoSTkJkV6ygnNVYslOfihhB81qpf1zKh/YdeRqkdKTCYVV2LhM09SCrxUowYXRZUEBOxMydW5YSoLpL0flrf6ORlkqgYDiLiZuSHyq9AglW4KdU8CAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAZgDL1NxacPHyY4fhwDLALZCjGA//9aoW2h0rVwfn4WkMbhBs1WVV9Qg9hsrr1KILukopPrMvoZbyRDS6ieyilip2UIjIIwq/kvYpGBTptIfhOBlrz/UCKscFeYql3vYIMmFYg5SXvCgJ4Ol02Wj82BSPBbe803JMllZ3HwcZzxP8n4kfT+13ulAPB3U6waWbkehalDwNssc9+MUAiWjOJGm9SuT61Ny+dIyBVWqeNiIBAtGJGSKQXykEl6lOhPFrSHF4TCeW83Q0viLqSGQUdOiipS0xHi2zKAtoeTVbO5uUp+qOWGuN76RqRX/M/OxH66ZadhNcVf2sziG9uvMWMA==</ds:X509Certificate>
+</ds:X509Data>
+</ds:KeyInfo>
+</md:KeyDescriptor>
+<md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="http://44.222.176.144:8080/realms/instasafe-lab/protocol/saml/resolve" index="0"/>
+<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://44.222.176.144:8080/realms/instasafe-lab/protocol/saml"/>
+<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="http://44.222.176.144:8080/realms/instasafe-lab/protocol/saml"/>
+<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="http://44.222.176.144:8080/realms/instasafe-lab/protocol/saml"/>
+<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="http://44.222.176.144:8080/realms/instasafe-lab/protocol/saml"/>
+<md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+<md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+<md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat>
+<md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</md:NameIDFormat>
+<md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://44.222.176.144:8080/realms/instasafe-lab/protocol/saml"/>
+<md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="http://44.222.176.144:8080/realms/instasafe-lab/protocol/saml"/>
+<md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="http://44.222.176.144:8080/realms/instasafe-lab/protocol/saml"/>
+<md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="http://44.222.176.144:8080/realms/instasafe-lab/protocol/saml"/>
+</md:IDPSSODescriptor>
+</md:EntityDescriptor>
 
 Metadata downloaded from:
 
